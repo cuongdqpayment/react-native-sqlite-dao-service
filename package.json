@@ -1,0 +1,80 @@
+{
+  "name": "react-native-sqlite-dao-service",
+  "version": "1.0.0",
+  "description": "Một thư viện mạnh mẽ dành cho React Native, giúp lập trình viên dễ dàng khai báo, quản lý và vận hành các cơ sở dữ liệu SQLite dưới dạng nhiều schema và service rõ ràng, tường minh, mở rộng được. Phù hợp cho các ứng dụng di động độc lập, offline-first, đa vai trò người dùng và đa bảng nghiệp vụ.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build",
+    "test": "jest",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
+    "typecheck": "tsc --noEmit",
+    "example": "cd example && npm start"
+  },
+  "keywords": [
+    "react-native",
+    "sqlite",
+    "database",
+    "dao",
+    "service",
+    "orm",
+    "offline",
+    "schema",
+    "mobile"
+  ],
+  "author": {
+    "name": "Doan Quoc Cuong",
+    "email": "cuongdq3500888@gmail.com",
+    "url": "https://www.npmjs.com/settings/cuongdq/packages"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cuongdqpayment/react-native-sqlite-dao-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cuongdqpayment/react-native-sqlite-dao-service/issues"
+  },
+  "homepage": "https://github.com/cuongdqpayment/react-native-sqlite-dao-service#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/react": "^18.3.23",
+    "@types/react-native": "^0.72.8",
+    "@types/react-native-sqlite-storage": "^6.0.5",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.6.2",
+    "react": "^18.2.0",
+    "react-native": "^0.72.17",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "react-native-fs": "^2.20.0",
+    "react-native-sqlite-storage": "^6.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0"
+  }
+}
